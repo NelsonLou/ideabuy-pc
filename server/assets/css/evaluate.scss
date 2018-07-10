@@ -1,0 +1,130 @@
+.evaluate-container {
+  width: 880px;
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 24px 40px 90px;
+  font-size: 12px;
+
+  .evaluate-level-container {
+    margin-top: 24px;
+
+    .product-photo {
+      float: left;
+      width: 125px;
+      height: 125px;
+      border: 1px solid #ddd;
+    }
+
+    .evaluate-level {
+      padding-left: 165px;
+      height: 105px;
+      padding-top: 20px;
+      font-size: 14px;
+
+      > div {
+        > div {
+          display: inline-block;
+          vertical-align: bottom;
+
+          &.star-container {
+            width: 24px;
+            height: 24px;
+            background-repeat: no-repeat;
+            background-image: url('/assets/images/evaluate/star.png');
+            cursor: pointer;
+            &.acitved {
+              background-image: url('/assets/images/evaluate/star-actived.png');
+            }
+          }
+
+          &.evaluate-level-text {
+            color: #ff2b2b;
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .my-upload {
+    margin-left: 10px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+
+    input[type='file'] {
+      position: absolute;
+      top: -25px;
+      left: 0;
+      width: 150px;
+      height: 150px;
+      opacity: 0;
+      font-size: 200px;
+      filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    width: 100px;
+    height: 100px;
+    border: 1px dashed #aaa;
+    color: #e5e5e5;
+    text-align: center;
+
+    .plus {
+      font-size: 50px;
+      line-height: 50px;
+    }
+  }
+
+  .upload-img-container {
+    float: left;
+
+    .upload-img {
+      position: relative;
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+      background: #ddd;
+
+      .del-upload-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .evaluate-product-name {
+    color: #3372e6;
+    margin-top: 20px;
+  }
+
+  .evaluate-product-detail {
+    color: #777;
+  }
+
+  .evaluate-textarea {
+    width: 834px;
+    padding: 17px 20px;
+    resize:none;
+  }
+
+  .my-placeholder {
+    color: #bcbcbc;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+  }
+}
+
+.hidden {
+  display: none;
+}

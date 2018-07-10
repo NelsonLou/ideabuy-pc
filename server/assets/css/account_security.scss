@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.content {
+     background: #F7F7F8;
+     display: flex;
+     justify-content: center;
+     .minBox {
+       display: flex;
+       justify-content: space-between;
+       .right {
+         width: 961px;
+         height: 701px;
+         background: #ffffff;
+           .right-hear {
+             width: 100%;
+             height: 60px;
+             line-height: 50px;
+               .account-title {
+                    color: #333333;
+                    font-size: 17px;
+                    margin-left: 31px;
+                    font-family: MicrosoftYaHei;
+                    }
+                }
+             .account-safe {
+                  width: 960px;
+                  height: 30px;
+                  background: #EEEEEE;
+                  position: relative;
+                     .safe-textO {
+                      font-size: 11px;
+                      font-family: MicrosoftYaHei;
+                      color: #333333;
+                      position: absolute;
+                      left: 30px;
+                      top: 8px;
+
+                    }
+                    .safe-barBox {
+                      width: 160px;
+                      height: 10px;
+                      background: #FFFFFF;
+                      position: absolute;
+                      top: 11px;
+                      left: 90px;
+                        .safe-bar {
+                          width: 120px;
+                          height: 10px;
+                          background: #0BE060;
+                        }
+                    }
+                    .safe-bar-text {
+                      font-size: 11px;
+                      font-family: MicrosoftYaHei;
+                      color: #9D8D4F;
+                      position: absolute;
+                      left: 262px;
+                      top: 8px;
+                    } 
+                    .safe-textT {
+                      font-size: 12px;
+                      font-family: MicrosoftYaHei;
+                      color: #FD7E24;
+                      position: absolute;
+                      left: 314px;
+                      top: 8px;
+                    } 
+             }     
+             .right-content {
+                .account-login {
+                  width: 960px;
+                  height: 89px;
+                  border-bottom: 2px dashed #EEEEEE;
+                  position: relative;
+                    .a-login-img {
+                      width: 27px;
+                      height: 27px;
+                      position: absolute;
+                      left: 45px;
+                      top: 34px;
+                    }
+                    .a-login-textO {
+                      font-size: 14px;
+                      font-family: MicrosoftYaHei;
+                      color: #333333;
+                      position: absolute;
+                      left: 133px;
+                      top: 40px;
+                    }
+                    .a-login-textT {
+                      font-size: 12px;
+                      font-family: MicrosoftYaHei;
+                      color: #777777;
+                      position: absolute;
+                      left: 282px;
+                      top: 41px;
+                    }
+                    .a-login-btnO {
+                      font-size: 12px;
+                      font-family: MicrosoftYaHei;
+                      color: #2234E7;
+                      background: white;
+                      border: none;
+                      outline: none;
+                      position: absolute;
+                      left: 827px;
+                      top: 41px;
+                    }
+                    .a-login-btnT {
+                      font-size: 12px;
+                      font-family: MicrosoftYaHei;
+                      color: #2234E7;
+                      background: white;
+                      border: none;
+                      outline: none;
+                      position: absolute;
+                      left: 827px;
+                      top: 38px;
+                    }
+                }
+                .account-transaction {
+                  width: 960px;
+                  height: 89px;
+                  border-bottom: 2px dashed #EEEEEE;
+                }       
+       }
+     }
+  }
+}

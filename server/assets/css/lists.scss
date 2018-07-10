@@ -1,0 +1,339 @@
+// 右边内容部分
+.right-content{
+  ul,p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+  }
+  width: 960px;
+  float: right;
+  background: #fff;
+  // 右边导航
+  .RCont-option{
+    border-bottom: 1px solid #f7f7f8;
+    ul{
+      width: 100%;
+      overflow: hidden;
+      li{
+        float: left;
+        list-style: none;
+        padding: 12px 0 11px 0;
+        a{
+          padding: 0 39px;
+          font-size: 14px;
+          color: #333;
+          text-decoration: none;
+          color: #333;
+          display: inline-block;
+          border-right: 1px solid #f7f7f8;
+          span{
+            padding-bottom: 10px;
+          }
+          .rigOp-sty{
+            border-bottom: 2px solid #AF923A;
+          }
+        }
+      }
+    }
+  }
+  // 右边内容列表
+  .cont-list{
+    padding: 10px 15px;
+    // 右边内容列表标题
+    .contList-title{
+      background: #F2F2F2;
+      table{
+        width: 100%;
+        text-align: center;
+        td{
+          font-size: 12px;
+          color: #272727;
+          padding: 10px 0;
+        }
+      }
+      ul{
+        overflow: hidden;
+        li{
+          font-size: 12px;
+          color: #333;
+          float: left;
+          list-style: none;
+          padding: 13px 0;
+          text-align: center;
+          width: 14%;
+        }
+        .CT-baby{
+          width: 471px;
+        }
+        .CT-pric{
+          width: 97px;
+        }
+        .CT-true{
+          width: 120px;
+        }
+        .CT-state{
+          width: 102px;
+        }
+        .CT-active{
+          width: 136px;
+        }
+      }
+    }
+    // 右边内容列表内容
+    .contList-cont{
+      margin-top: 10px;
+      .cont-top{
+        font-size: 12px;
+        color: #777;
+        line-height: 37px;
+        background: #F2F2F2;
+        position: relative;
+        span{
+          padding: 10px 75px 10px 15px;
+          position: relative;
+          cursor: pointer;
+          i{
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: url('../images/order/UC_ser.png');
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 10px;
+            right: 50px;
+          }
+        }
+        .order-time{
+          cursor: auto;
+        }
+        small{
+          position: absolute;
+          display: block;
+          width: 39px;
+          font-size: 12px;
+          color: red;
+          right: 15px;
+          top: 0;
+          cursor: pointer;
+          em{
+            width: 13px;
+            height: 14px;
+            display: block;
+            background: url('../images/order/UC_del.png');
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 11px;
+            right: 0;
+          }
+        }
+      }
+      .cont-table{
+        tr{
+          td{
+            border: 1px solid #ccc;
+            img{
+              width: 60px;
+              height: 60px;
+              float: left;
+            }
+            .goods-detail{
+              width: 250px;
+              margin-left: 70px;
+              cursor: pointer;
+              p{
+                font-size: 12px;
+                color: #777;
+              }
+              .goods-name{
+                font-size: 12px;
+                color: #333;
+                position: relative;
+                font-weight: normal;
+                height: 43px;
+              }
+              .goods-num{
+                display: block;
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                top: -2px;
+                right: -100px;
+                font-size: 15px;
+                color: #777;
+                font-weight: normal;
+              }
+            }
+            i{
+              display: block;
+              padding: 3px 0;
+            }
+            i,em{
+              font-style: normal;
+            }
+          }
+          .goods-info{
+            width: 455px;
+            padding: 15px;
+            overflow: hidden;
+          }
+          .pice-td{
+            width: 100px;
+            font-size: 12px;
+            color: #777;
+            .goods-Origprice{
+              text-decoration: line-through;
+            }
+            .after-fold{
+              color: #333;
+            }
+          }
+          .goods-total{
+            width: 125px;
+            .final-price{
+              font-size: 14px;
+              color: red;
+            }
+            .goods-freight{
+              font-size: 12px;
+              color: #333;
+            }
+          }
+          .goods-status{
+            width: 110px;
+            font-size: 12px;
+            color: #333;
+            .order-detail,.ious-bill,.goods-logistics{
+              cursor: pointer;
+            }
+            .goods-logistics{
+              color: #FD7E24;
+            }
+          }
+          .goods-operation{
+            width: 140px;
+            font-size: 12px;
+            .confirm-receipt,.goods-evaluate{
+              display: block;
+              width: 80px;
+              line-height: 25px;
+              margin: 0 auto;
+              font-size: 12px;
+              border-radius: 3px;
+              cursor: pointer;
+            }
+            .immedia-pay,.cancel-order,.return-goods,.view-refund{
+              cursor: pointer;
+            }
+            .confirm-receipt{
+              background: #FD7E24;
+              color: #fff;
+            }
+            .goods-evaluate{
+              line-height: 23px;
+              border: 1px solid #ccc;
+            }
+          }
+          .ID-nunm{
+            width: 150px;
+            text-align: center;
+          }
+          .ID-noth{
+            width: 180px;
+            text-align: center;
+            color: #FF0000;
+          }
+          .ID-have{
+            width: 180px;
+            text-align: center;
+            color: #001EFF;
+          }
+          .ID-open{
+            width: 180px;
+            text-align: center;
+            cursor: pointer;;
+            em{
+              margin-bottom: 5px;
+            }
+            em,b{
+              display: block;
+              font-weight: normal;
+              font-style: normal;
+              cursor: pointer;
+            }
+          }
+          .pice-td,.goods-total,.goods-status,.goods-operation{
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .parting-line{
+    width: 100%;
+    height: 1px;
+    background: #F7F7F8;
+    margin: 20px 0;
+  }
+}
+
+/*
+			  * 外面盒子样式---自己定义
+			  */
+      .page_box{
+        margin: 20px auto;
+        overflow: hidden;
+      }
+			.page_div {
+				font-size: 15px;
+				font-family: "microsoft yahei";
+				color: #a6a6a6;
+				box-sizing: border-box;
+        float: right;
+			}
+			/*
+			 * 页数按钮样式
+			 */
+       .total-num{
+         display: none;
+       }
+			.page_div a {
+				min-width: 30px;
+				height: 28px;
+				border: 1px solid #dce0e0!important;
+				text-align: center;
+				margin: 0 4px;
+				cursor: pointer;
+				line-height: 28px;
+				color: #a6a6a6;
+				font-size: 13px;
+				display: inline-block;
+			}
+			#firstPage,
+			#lastPage {
+				width: 50px;
+				color: #a6a6a6;
+				border: 1px solid #ddd!important;
+			}
+			#prePage,
+			#nextPage {
+				width: 70px;
+				color: #a6a6a6;
+				border: 1px solid #ddd!important;
+			}
+			.page_div .current {
+				background-color: #ff6600;
+				border-color: #ff6600;
+				color: #FFFFFF;
+			}
+			.totalPages {
+				margin: 0 10px;
+			}
+			.totalPages span,
+			.totalSize span {
+				color: #a6a6a6;
+				margin: 0 5px;
+			}
+
+
+.clear-float{
+  clear: both;
+}

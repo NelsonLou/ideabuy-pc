@@ -1,0 +1,30 @@
+.valiform-error {
+  border: 1px solid #EC7272 !important;
+}
+.text-error {
+  color: #EC7272;
+  font-size: 12px;
+  position: absolute;
+  display: block;
+  width: 400px;
+  background: #FFF;
+  z-index: 100;
+}
+.text-suc {
+  color: #FFF;
+  z-index: -1;
+}
+.passwordStrength span {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin: 0 20px;
+  background-color: #d0d0d0;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+}
+.passwordStrength .bgStrength {
+  color: #fff;
+  background-color: #71b83d;
+}

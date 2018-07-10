@@ -1,0 +1,96 @@
+.right-content{
+  ul,p,h1,h2,h3,h4,h5,h6,b,strong{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  width: 960px;
+  float: right;
+  background: #fff;
+  color: #333333;
+  .ID-title{
+    font-size: 17px;
+    padding: 18px 30px;
+    border-bottom: 1px solid #F7F7F8;
+  }
+  .inv-current{
+    padding: 20px 30px;
+    .IC-table{
+      width: 100%;
+      tr{
+        td{
+          padding: 20px 25px;
+          border: 1px solid #EEEEEE;
+        }
+        td:nth-of-type(1){
+          width: 150px;
+        }
+        .IC-money,.IC-type{
+          border-right: none;
+        }
+        .IC-yuan,.IC-feel{
+          border-left: none;
+        }
+      }
+    }
+    .IC-p{
+      background: #eee;
+      text-align: left;
+      padding: 10px 25px;
+    }
+    .electronic-invoice{
+      width: 100%;
+      margin-top: 35px;
+      tr{
+        th,td{
+          border: 1px solid #eee;
+        }
+        th{
+          background: #eee;
+          padding: 12px 0;
+          font-weight: normal;
+        }
+        td{
+          padding: 23px 12px;
+        }
+        .IC-code{
+          width: 190px;
+        }
+        .IC-num{
+          width: 155px;
+        }
+        .IC-qr{
+          width: 325px;
+          position: relative;
+          span{
+            display: block;
+            width: 62px;
+            height: 62px;
+            background: url('../images/invoice/u28891.png');
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 20px;
+          }
+          b{
+            color: #777;
+            margin-left: 70px;
+          }
+        }
+        .IC-down{
+          a,strong{
+            display: block;
+            color: #046FE7;
+          }
+          strong{
+            color: #777;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+    .IC-careful{
+      color: #777;
+      padding: 30px 0;
+    }
+  }
+}

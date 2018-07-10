@@ -1,0 +1,59 @@
+.act-body{
+  width: 100%;
+  padding: 35px 0;
+  background: #f7f7f7;
+  p{
+    margin: 0;
+  }
+  div, p, span, input{
+    color: #333;
+    font-size: 12px;
+    box-sizing: border-box;
+  }
+  .act-content{
+    width: 1190px;
+    margin: 0 auto;
+    background: #fff;
+    overflow: hidden;
+    padding-bottom: 100px;
+    .act-comp-img{
+      width: 246px;
+      height: 230px;
+      margin: 60px auto 40px 455px;
+      background: url('../images/ious/act-completeCredit.png') no-repeat;
+    }
+    .act-comp-title{
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .act-comp-msg{
+      line-height: 30px;
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 35px;
+      .act-comp-msg-num{
+        font-size: 30px;
+        color: #FF0000;
+        padding: 0 2px;
+      }
+    }
+    .act-comp-btn-shop{
+      width: 130px;
+      height: 36px;
+      color: #fff;
+      font-size: 12px;
+      line-height: 36px;
+      text-align: center;
+      margin: 0 auto;
+      cursor: pointer;
+      FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#FFB101,endColorStr=#FF6E02); /*IE 6 7 8*/
+      background: -ms-linear-gradient(top, #FFB101,  #FF6E02);        /* IE 10 */
+      background: -moz-linear-gradient(top,#FFB101,#FF6E02);/*火狐*/
+      background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(#FFB101), to(#FF6E02));/*谷歌*/
+      background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFB101), to(#FF6E02));      /* Safari 4-5, Chrome 1-9*/
+      background: -webkit-linear-gradient(top, #FFB101, #FF6E02);   /*Safari5.1 Chrome 10+*/
+      background: -o-linear-gradient(top, #FFB101, #FF6E02);  /*Opera 11.10+*/
+    }
+  }
+}

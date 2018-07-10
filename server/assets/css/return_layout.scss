@@ -1,0 +1,104 @@
+$default-color:#FD7E24;
+$done-color:#eeab7d;
+$gray-color:#ddd;
+%radio-input{
+  vertical-align: middle;
+  width:17px;
+  height:17px;
+}
+%normal-input{
+  width:261px;
+  padding:5px 10px;
+}
+.hidden{
+  display: none;
+}
+
+h1 {
+  color:$gray-color;
+}
+.return-container {
+  width:930px;
+  border:1px solid #ddd;
+  background:#fff;
+  padding:0 15px 27px 15px;
+  .title {
+    font-size: 17px;
+    padding:19px 0 15px 15px;
+    border-bottom:1px solid #f7f7f8;
+  }
+  .tab-group,.tab-group-1 {
+    width:100%;
+    height:37px;
+    margin:0 auto;
+    margin-top:10px;
+    background:$gray-color;
+    .tab{
+      width:33.3%;
+      height:100%;
+      position:relative;
+      text-align: center;
+      font-size:12px;
+      float:left;
+      &:before{
+        content:'';
+        display: table;
+      }
+      &.done{
+        background:$done-color;
+        &:after{
+          content:'';
+          position:absolute;
+          display:block;
+          top:0;
+          background-image:url('../images/return/triangle1.png');
+          background-size:15px 37px;
+          right:-15px;
+          width:15px;
+          height:37px;
+          z-index:10;
+        }
+      }
+      &.actived{
+        background:$default-color;
+        &.no-triangle{
+          &:after{
+            content:'';
+            display:none;
+          }
+        }
+        &:after{
+          content:'';
+          position:absolute;
+          display:block;
+          top:0;
+          background-image:url('../images/return/triangle.png');
+          background-size:15px 37px;
+          right:-15px;
+          width:15px;
+          height:37px;
+        }
+        .tab-content .circle{
+          color:$default-color;
+        }
+      }
+      .tab-content{
+        margin-top:8px;
+        .circle{
+          background:#fff;
+          width:19px;
+          height:19px;
+          border-radius: 50%;
+          text-align:center;
+          line-height:19px;
+          display: inline-block;
+          margin-right:8px;
+          color:$gray-color;
+        }
+        .text{
+          color:#fff;
+        }
+      }
+    }
+  }
+}

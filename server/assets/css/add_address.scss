@@ -1,0 +1,111 @@
+.add-address-box{
+  width: 960px;
+  height: 662px;
+  border: 1px solid #EEE;
+  background: #FFF;
+  .add-address-header {
+    padding-left: 30px;
+    padding-top: 19px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #F7F7F8;
+    span {
+      font-size: 17px;
+      color: #333;
+      margin-right: 18px;
+    }
+  }
+  .add-address {
+    .title {
+      text-align: center;
+      font-size: 18px;
+      color: #333;
+      margin-top: 50px;
+    }
+    .form {
+      margin-left: 258px;
+      margin-top: 43px;
+      div {
+        position: relative;
+      }
+      .full {
+        display: inline-block;
+        height: 35px;
+        line-height: 35px;
+        position: absolute;
+      }
+      .city-picker-select {
+        margin-left: 71px;
+      }
+      label {
+        display: inline-block;
+        width: 60px;
+        text-align: right;
+        margin-right: 8px;
+        font-size: 14px;
+        color: #333;
+      }
+      input {
+        width: 321px;
+        height: 35px;
+        border: 1px solid #DDD;
+        margin-top: 34px;
+        text-indent: 13px;
+        font-size: 12px;
+        line-height: 35px;
+      }
+      select {
+        width: 101px;
+        border: 1px solid #DDD;
+        line-height: 37px;
+        text-align: center;
+        height:35px; 
+        line-height:35px;
+        padding:5px 0;
+      }
+      button {
+        width: 151px;
+        height: 35px;
+        border: 1px solid #FD7E24;
+      }
+      .cancel {
+        color: #FD7E24;
+        font-size: 14px;
+        background: #FFF;
+        margin-left: 70px;
+        margin-right: 18px;
+      }
+      .cancel:hover {
+        border-color: #FE944A;
+      }
+      .confirm {
+        color: #FFF;
+        font-size: 14px;
+        background: #FD7E24;
+      }
+      .confirm:hover {
+        background: #FE944A;
+      }
+      .set-default {
+        margin-top: 29px;
+        margin-bottom: 29px;
+        display: flex;
+        align-items: center;
+        label {
+          width: 100px;
+          text-align: left;
+        }
+        input {
+          width: 17px;
+          height: 17px;
+          margin-top: 0;
+          margin-left: 70px;
+          margin-right: 11px;
+        }
+      }
+    }
+  }
+}
+
+input::-webkit-input-placeholder {
+  color: #CCC;
+}

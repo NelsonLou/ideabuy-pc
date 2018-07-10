@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.content {
+     background: #F7F7F8;
+     display: flex;
+     justify-content: center;
+     .minBox {
+       .right {
+         width: 961px;
+         background: #ffffff;
+           .right-hear {
+             width: 100%;
+             height: 60px;
+             border-bottom: 2px solid #F7F7F8;
+                .newsTitle-box {
+                  width: 276px;
+                  height: 60px;
+                  margin-left: 50px;
+                  position: relative;
+                    .newsTitleBox-notice {
+                      line-height: 60px;
+                      font-size: 14px;
+                      color: #333333;
+                      font-family: MicrosoftYaHei;
+                      text-align: center;
+                      width: 60px;
+                      height: 60px;
+                      position: absolute;
+                    }
+                    .newsTitleBox-personal {
+                      line-height: 60px;
+                      font-size: 14px;
+                      color: #333333;
+                      font-family: MicrosoftYaHei;
+                      text-align: center;
+                      width: 60px;
+                      height: 60px;
+                      position: absolute;
+                      left: 80px;
+                    }
+                    .newBtnLeft {
+                      left: 155px;
+                    }              
+                 }
+                }
+             .right-content {
+               .notice-viewBox {
+                .notice-view {
+                  .noticeView-list {
+                    width: 100%;
+                    height: 190px;
+                    border-bottom: 2px dashed #EEEEEE;
+                      .nVL-imagesDiv {
+                        width: 271px;
+                        height: 147px;
+                        background: url("/assets/images/blue.png") no-repeat;
+                        color: white;
+                        margin-top: 19px;
+                        margin-left: 29px;
+                        text-align: center;
+                          .nVL-imagesDiv-title {
+                              font-size: 24px;
+                              font-family: MicrosoftYaHei-Bold;
+                              padding-top: 20px;
+                          }
+                          .nVL-imagesDiv-pO {
+                              font-size: 14px;
+                              font-family: MicrosoftYaHei-Bold;
+                              margin-top: 15px;
+                          }
+                          .nVL-imagesDiv-pT {
+                              font-size: 14px;
+                              font-family: MicrosoftYaHei;
+                              margin-top: 20px;
+                          }
+                      }
+                      .listContent-pO {
+                        margin-left: 320px;
+                        font-size: 14px;
+                        font-family: MicrosoftYaHei-Bold;
+                        color: #333333;
+                        margin-top: -150px;  
+                      }
+                      .listContent-pT {
+                        margin-left: 320px;
+                        font-size: 14px;
+                        font-family: MicrosoftYaHei;
+                        color: #777777;
+                        margin-top: 15px;  
+                      }
+                      .listContent-pF {
+                        margin-left: 320px;
+                        font-size: 14px;
+                        font-family: MicrosoftYaHei;
+                        color: #777777;
+                        margin-top: 15px;  
+                      }
+                      .listContent-pS {
+                        margin-left: 320px;
+                        font-size: 14px;
+                        font-family: MicrosoftYaHei;
+                        color: #777777;
+                        margin-top: 14px;  
+                      }
+                      .listContent-pE {
+                        margin-left: 320px;
+                        font-size: 14px;
+                        font-family: MicrosoftYaHei;
+                        color: #777777;
+                        margin-top: 16px;  
+                      }
+                      .listContent-btn {
+                        width: 120px;
+                        height: 30px;
+                        border: 1px solid #FD7E24;
+                        color: #FD7E24;
+                        margin-left: 810px;
+                        margin-top: -79px;
+                        line-height: 6px;
+                        text-align: center;
+                      }  
+                  }
+                }
+                .theme_body {
+                  .pagecount {
+                    text-align: right;
+                    margin-bottom: 5px;
+                    padding:15px 15px 20px 0;
+                        span {
+                          display: inline-block;
+                          background: #ddd;
+                          margin:0 0 0 5px;
+                          width:60px;
+                          text-align: center;
+                          padding:2px 8px 2px 8px;
+                          border:1px solid #eee;
+                          color: #666;
+                              a {
+                                color:#333;
+                                    &:hover {
+                                      text-decoration: underline;
+                                    }
+                              }
+                        }
+                  }
+                }
+               } 
+                .personal-viewBox {
+                  display: none;
+                  .personal-view {
+                    .personalView-list {
+                      width: 100%;
+                      height: 190px;
+                      border-bottom: 2px dashed #EEEEEE;
+                        .pVL-imagesDiv {
+                        width: 271px;
+                        height: 147px;
+                        background: url("/assets/images/yellow.png") no-repeat;
+                        color: white;
+                        margin-top: 19px;
+                        margin-left: 29px;
+                        text-align: center;
+                          .pVL-imagesDiv-title {
+                              font-size: 24px;
+                              font-family: MicrosoftYaHei-Bold;
+                              padding-top: 20px;
+                          }
+                          .pVL-imagesDiv-pO {
+                              font-size: 14px;
+                              font-family: MicrosoftYaHei-Bold;
+                              margin-top: 15px;
+                          }
+                          .pVL-imagesDiv-pT {
+                              font-size: 14px;
+                              font-family: MicrosoftYaHei;
+                              margin-top: 20px;
+                          }
+                      }
+                      .tlistContent-pO {
+                        margin-left: 320px;
+                        font-size: 14px;
+                        font-family: MicrosoftYaHei-Bold;
+                        color: #333333;
+                        margin-top: -150px;  
+                      }
+                      .tlistContent-pT {
+                        margin-left: 320px;
+                        font-size: 14px;
+                        font-family: MicrosoftYaHei;
+                        color: #777777;
+                        margin-top: 15px;  
+                      }
+                      .tlistContent-pF {
+                        margin-left: 320px;
+                        font-size: 14px;
+                        font-family: MicrosoftYaHei;
+                        color: #777777;
+                        margin-top: 15px;  
+                      }
+                      .tlistContent-pS {
+                        margin-left: 320px;
+                        font-size: 14px;
+                        font-family: MicrosoftYaHei;
+                        color: #777777;
+                        margin-top: 14px;  
+                      }
+                      .tlistContent-pE {
+                        margin-left: 320px;
+                        font-size: 14px;
+                        font-family: MicrosoftYaHei;
+                        color: #777777;
+                        margin-top: 16px;  
+                      }
+                      .tlistContent-btn {
+                        width: 120px;
+                        height: 30px;
+                        color: #C0C0C0;
+                        margin-left: 810px;
+                        margin-top: -79px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                      }  
+                    }
+                  }
+              }
+               .Invalid-viewBox {
+                  display: none;
+                  .Invalid-view {
+                    .InvalidView-list {
+                      width: 100%;
+                      height: 190px;
+                      border-bottom: 2px dashed #EEEEEE;
+                        .iVL-imagesDiv {
+                        width: 271px;
+                        height: 147px;
+                        background: url("/assets/images/gray.png") no-repeat;
+                        color: white;
+                        margin-top: 19px;
+                        margin-left: 29px;
+                        text-align: center;
+                          .iVL-imagesDiv-title {
+                              font-size: 24px;
+                              font-family: MicrosoftYaHei-Bold;
+                              padding-top: 20px;
+                          }
+                          .iVL-imagesDiv-pO {
+                              font-size: 14px;
+                              font-family: MicrosoftYaHei-Bold;
+                              margin-top: 15px;
+                          }
+                          .iVL-imagesDiv-pT {
+                              font-size: 14px;
+                              font-family: MicrosoftYaHei;
+                              margin-top: 20px;
+                          }
+                      }
+                      .ilistContent-pO {
+                        margin-left: 320px;
+                        font-size: 14px;
+                        font-family: MicrosoftYaHei-Bold;
+                        color: #333333;
+                        margin-top: -150px;  
+                      }
+                      .ilistContent-pT {
+                        margin-left: 320px;
+                        font-size: 14px;
+                        font-family: MicrosoftYaHei;
+                        color: #777777;
+                        margin-top: 15px;  
+                      }
+                      .ilistContent-pF {
+                        margin-left: 320px;
+                        font-size: 14px;
+                        font-family: MicrosoftYaHei;
+                        color: #777777;
+                        margin-top: 15px;  
+                      }
+                      .ilistContent-pS {
+                        margin-left: 320px;
+                        font-size: 14px;
+                        font-family: MicrosoftYaHei;
+                        color: #777777;
+                        margin-top: 14px;  
+                      }
+                      .ilistContent-pE {
+                        margin-left: 320px;
+                        font-size: 14px;
+                        font-family: MicrosoftYaHei;
+                        color: #777777;
+                        margin-top: 16px;  
+                      }
+                      .ilistContent-btn {
+                        width: 120px;
+                        height: 30px;
+                        color: #C0C0C0;
+                        margin-left: 810px;
+                        margin-top: -79px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                      }  
+                    }
+                  }
+              }   
+       }
+     }
+  }
+}

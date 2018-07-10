@@ -1,0 +1,322 @@
+.act-body{
+  width: 100%;
+  padding: 35px 0;
+  background: #f7f7f7;
+  p, ul, li{
+    margin: 0;
+    padding: 0;
+  }
+  div, p, span, input{
+    color: #333;
+    font-size: 12px;
+    box-sizing: border-box;
+  }
+  .act-content{
+    width: 1190px;
+    margin: 0 auto;
+    background: #fff;
+    overflow: hidden;
+    .act-title{
+      margin: 40px 0;
+      text-align: center;
+    }
+    .act-form{
+      .act-form-item{
+        height: 72px;
+        padding-left: 370px;
+        position: relative;
+        font-size: 0;
+        .act-label{
+          display: inline-block;
+          width: 75px;
+          line-height: 36px;
+          font-size: 12px;
+          vertical-align: top;
+        }
+        .act-input{
+          margin-left: 14px;
+          width: 333px;
+          height: 36px;
+          padding-left: 33px;
+          line-height: 36px;
+          font-size: 12px;
+          vertical-align: top;
+        }
+        .act-input::-webkit-input-placeholder{
+          color: #ccc;
+          font-size: 12px;
+        }
+        .msg-input{
+          width: 205px;
+        }
+        .act-form-get-msg{
+          width: 120px;
+          height: 36px;
+          font-size: 12px;
+          color: #333;
+          background: #F7F7F7;
+          border: 1px solid #DDD;
+          margin-left: 10px;
+          border-radius: 3px;
+        }
+        .act-form-bank-info{
+          display: inline-block;
+          width: 21px;
+          height: 21px;
+          margin: 8px;
+          vertical-align: top;
+          position: relative;
+          cursor: pointer;
+          .act-bank-info-icon{
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: url('../images/ious/act-icon-info.png') no-repeat;
+          }
+          .act-bank-info-close{
+            display: none;
+            width: 100%;
+            height: 100%;
+            background: url('../images/ious/act-icon-close.png') no-repeat;
+          }
+          .act-bank-support{
+            display: none;
+            position: absolute;
+            right: 28px;
+            top: -100px;
+            width: 450px;
+            height: 300px;
+            background: #fff;
+            border: solid 1px #8cb5de;
+            z-index: 100;
+            .act-bank-support-title{
+              text-align: center;
+              font-size: 18px;
+              color: #333;
+              line-height: 50px;
+            }
+            .act-bank-support-content{
+              padding: 0 10px;
+              .act-bank-support-list{
+                padding-left: 10px;
+                font-size: 0;
+                max-height: 240px;
+                overflow: auto;
+                .act-bank-support-item{
+                  display: inline-block;
+                  width: 33%;
+                  height: 40px;
+                  text-align: center;
+                  .act-bank-icon{
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    vertical-align: top;
+                  }
+                  .act-bank-name{
+                    display: inline-block;
+                    width: 100px;
+                    height: 30px;
+                    color: #969696;
+                    font-size: 14px;
+                    line-height: 30px;
+                    vertical-align: top;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .act-input-clear{
+          display: none;
+          width: 36px;
+          height: 36px;
+          padding: 10px;
+          left: 760px;
+          top: 0;
+          cursor: pointer;
+          position: absolute;
+          z-index: 9;
+          .icon-clear{
+            width: 16px;
+            height: 16px;
+            display: block;
+            background: url('../images/ious/act-false.png') no-repeat;
+          }
+        }
+        #clearThi{
+          left: 630px;
+        }
+        .act-form-verify{
+          display: none;
+          margin: 10px 0 11px 0;
+          padding-left: 90px;
+          height: 15px;
+          .act-input-tips-icon{
+            width: 15px;
+            height: 15px;
+            margin-right: 12px;
+            display: inline-block;
+            background: url('../images/ious/act-input-tips.png') no-repeat;
+          }
+          .act-input-tips{
+            font-size: 12px;
+            line-height: 15px;
+            color: #F02E2E;
+            display: inline-block;
+            vertical-align: top;
+          }
+        }
+      }
+      .act-form-verify{
+        font-size: 12px;
+        color: #F02E2E;
+        margin: 14px 0 22px 0;
+        padding-left: 460px;
+      }
+      .act-btn-submit{
+        width: 330px;
+        height: 36px;
+        margin: 36px auto 40px auto;
+        color: #fff;
+        line-height: 36px;
+        text-align: center;
+        background: #fa9738;
+        cursor: pointer;
+      }
+    }
+  }
+  .act-layer{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #666;
+    opacity: .6;
+    -webkit-opacity: 0.6;
+    -khtml-opacity: 0.6;
+    -moz-opacity: 0.6;
+    filter:alpha(opacity=60);
+    filter:"alpha(opacity=60)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+    z-index: 90;
+  }
+  .act-overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    .act-overlay-window-top{
+      width: 100%;
+      height: 50px;
+      text-align: center;
+      position: relative;
+      .act-overlay-close{
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 12px;
+        height: 12px;
+        background: url('../images/ious/act-false.png') no-repeat;
+        cursor: pointer;
+      }
+    }
+    .act-overlay-window-title{
+      font-size: 18px;
+      text-align: center;
+    }
+    .act-overlay-window-msg{
+      font-size: 12px;
+      color: #969696;
+    }
+    .act-overlay-window-btn{
+      width: 155px;
+      height: 42px;
+      text-align: center;
+      line-height: 42px;
+      font-size: 12px;
+      border: 1px solid #eee;
+      display: inline-block;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .act-overlay-window-fail{
+      display: none;
+      width: 438px;
+      height: 300px;
+      margin: 260px auto 0;
+      background: #fff;
+      overflow: hidden;
+      border-radius: 6px;
+      .act-overlay-window-icon{
+        width: 48px;
+        height: 48px;
+        margin: 18px auto 32px auto;
+        background: url('../images/ious/act-warn.png') no-repeat;
+      }
+      .act-overlay-window-msg{
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .act-overlay-window-btn{
+        margin: 0 auto;
+        display: block;
+      }
+    }
+    .act-overlay-window-cut{
+      display: none;
+      width: 438px;
+      height: 208px;
+      margin: 260px auto 0;
+      background: #fff;
+      overflow: hidden;
+      border-radius: 10px;
+      .act-overlay-window-title{
+        margin: 10px 0 38px 0;
+      }
+      .act-overlay-window-btn-group{
+        width: 350px;
+        height: 42px;
+        margin: 0 auto;
+        .act-btn-help{
+          color: #fff;
+          background: #c5c5c5;
+          border: none;
+        }
+        .act-btn-right{
+          margin-left: 30px;
+        }
+      }
+    }
+    .act-overlay-window-help{
+      display: none;
+      width: 438px;
+      height: 380px;
+      margin: 220px auto 0;
+      background: #fff;
+      overflow: hidden;
+      border-radius: 10px;
+      .act-overlay-window-title{
+        margin-bottom: 28px;
+      }
+      .act-overlay-window-msg{
+        margin-bottom: 10px;
+        padding: 0 40px;
+        line-height: 20px;
+        .act-overlay-window-msg-link{
+          color: #0099ff;
+        }
+      }
+      .act-overlay-window-btn{
+        margin: 40px auto 0 auto;
+        display: block;
+      }
+    }
+  }
+}

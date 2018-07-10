@@ -1,0 +1,225 @@
+.act-body{
+  width: 100%;
+  padding: 35px 0;
+  background: #f7f7f7;
+  p{
+    margin: 0;
+  }
+  div, p, span, input{
+    color: #333;
+    font-size: 12px;
+    box-sizing: border-box;
+  }
+  .act-content{
+    width: 1190px;
+    margin: 0 auto;
+    background: #fff;
+    overflow: hidden;
+    .act-title{
+      margin: 50px 0;
+      text-align: center;
+    }
+    .act-form{
+      .act-form-item{
+        height: 40px;
+        padding-left: 370px;
+        margin-bottom: 30px;
+        position: relative;
+        .act-label{
+          display: inline-block;
+          width: 42px;
+          line-height: 36px;
+          font-size: 12px;
+        }
+        .act-input{
+          margin-left: 25px;
+          width: 333px;
+          height: 36px;
+          padding-left: 33px;
+          line-height: 36px;
+          font-size: 12px;
+        }
+        .act-placeholder{
+          position: absolute;
+          display: inline-block;
+          left: 445px;
+          top: 0;
+          width: 333px;
+          height: 36px;
+          color: #ccc;
+          padding-left: 33px;
+          line-height: 34px;
+          font-size: 12px;
+        }
+        .act-input-clear{
+          position: absolute;
+          display: none;
+          width: 16px;
+          height: 16px;
+          left: 750px;
+          top: 12px;
+          cursor: pointer;
+          background: url('../images/ious/act-false.png') no-repeat;
+          z-index: 11;
+        }
+      }
+      .act-tips{
+        font-size: 12px;
+        color: #AAAAAA;
+        margin: 8px 0 13px 0;
+        text-align: center;
+      }
+      .act-btn-submit{
+        width: 330px;
+        height: 36px;
+        margin: 0 auto 40px auto;
+        color: #fff;
+        line-height: 36px;
+        text-align: center;
+        background: #fa9738;
+        cursor: pointer;
+      }
+    }
+  }
+  .act-layer{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #666;
+    opacity: .6;
+    -webkit-opacity: 0.6;
+    -khtml-opacity: 0.6;
+    -moz-opacity: 0.6;
+    filter:alpha(opacity=60);
+    filter:"alpha(opacity=60)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+    z-index: 90;
+  }
+  .act-overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    .act-overlay-window{
+      width: 438px;
+      height: 268px;
+      margin: 260px auto 0;
+      background: #fff;
+      overflow: hidden;
+      border-radius: 10px;
+      .act-overlay-window-title{
+        font-size: 18px;
+        text-align: center;
+        margin: 50px 0 30px 0;
+      }
+      .act-overlay-window-name{
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .act-overlay-window-idcard{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .act-overlay-window-btn-group{
+        width: 350px;
+        height: 42px;
+        margin: 0 auto;
+        .act-overlay-window-btn{
+          width: 155px;
+          height: 42px;
+          display: inline-block;
+          text-align: center;
+          line-height: 42px;
+          font-size: 12px;
+          border: 1px solid #eee;
+          border-radius: 6px;
+          cursor: pointer;
+        }
+        .act-btn-right{
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+  .act-res-layer{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #666;
+    opacity: .6;
+    -webkit-opacity: 0.6;
+    -khtml-opacity: 0.6;
+    -moz-opacity: 0.6;
+    filter:alpha(opacity=60);
+    filter:"alpha(opacity=60)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+    z-index: 90;
+  }
+  .act-res-overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    .act-overlay-window-fail{
+      width: 438px;
+      height: 300px;
+      margin: 260px auto 0;
+      background: #fff;
+      overflow: hidden;
+      border-radius: 6px;
+      .act-overlay-window-top{
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        position: relative;
+        .act-overlay-close{
+          position: absolute;
+          right: 15px;
+          top: 15px;
+          width: 12px;
+          height: 12px;
+          background: url('../images/ious/act-false.png') no-repeat;
+          cursor: pointer;
+        }
+      }
+      .act-overlay-window-icon{
+        width: 48px;
+        height: 48px;
+        margin: 18px auto 32px auto;
+        background: url('../images/ious/act-warn.png') no-repeat;
+      }
+      .act-overlay-window-msg{
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .act-overlay-window-btn{
+        width: 155px;
+        height: 42px;
+        text-align: center;
+        line-height: 42px;
+        font-size: 12px;
+        border: 1px solid #eee;
+        display: inline-block;
+        border-radius: 6px;
+        cursor: pointer;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  }
+}

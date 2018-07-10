@@ -1,0 +1,98 @@
+// 自定义需求
+
+body {
+  font-size: 12px;
+  font-family: "Microsoft YaHei";
+  background: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+input {
+  outline: none;
+}
+// 浮动/清除浮动公共类
+
+.common-left {
+  float: left;
+}
+
+.common-right {
+  float: right;
+}
+
+.common-clearfloat:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+
+.common-clearfloat {
+  zoom: 1;
+}
+// 公共宽度类
+
+.common-w {
+  width: 1190px;
+  margin: 0 auto;
+}
+
+.common-display {
+  display: none;
+}
+
+.common-show {
+  display: block;
+}
+
+.container-user {
+  width: 100%;
+  min-width: 1400px;
+  background-color: #f2f2f2;
+}
+
+.container-user-title {
+  color: #666;
+}
+
+.common-crumbs {
+  height: 38px;
+  line-height: 38px;
+}
+
+.layoutU-right {
+  margin-bottom: 20px;
+}
+
+.clear-float {
+  overflow: hidden;
+  clear: both;
+}
+
+.headerU {
+  border-bottom: 4px solid #E78A23;
+}
+
+#msg {
+  margin: 10px 20px;
+  padding: 10px;
+}
+
+.success-msg {
+  border: 1px solid #e1e1ca;
+  background-color: #eefee0;
+}
+
+.error-msg {
+  border: 1px solid #e1cfca;
+  background-color: #fee9e0;
+}

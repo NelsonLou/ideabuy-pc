@@ -1,0 +1,177 @@
+$default-color:#FD7E24;
+$hover-color:#FD944A;
+$gray-color:#ddd;
+%normal-input{
+  width:261px;
+  padding:5px 10px;
+}
+.hidden{
+  display:none;
+}
+
+.text-error{
+  position:absolute;
+  top:30px;
+  left:186px;
+  color:red;
+  &.text-suc{
+    display:none;
+  }
+}
+
+.return-step2-container{
+  margin-top:10px;
+  &:after{
+    content:'';
+    display: block;
+    clear:both;
+  }
+  .return-detail-container{
+    float:right;
+    width:270px;
+  }
+  .return-consult-container{
+    width:640px;
+    float:left;
+    margin-top:10px;
+  }
+  .step3-main{
+    width:580px;
+    background:#f3f3f3;
+    padding:30px;
+    color:#333;
+    font-size:12px;
+    float:left;
+    .btn-group{
+      margin-top:38px;
+      >div{
+        display: inline-block;
+        border:1px solid $default-color;
+        width:100px;
+        height:27px;
+        line-height:27px;
+        text-align: center;
+        cursor: pointer;
+        &:hover{
+          background:$hover-color;
+        }
+      }
+      .btn-left{
+        margin-right:20px;
+        color:$default-color;
+        &:hover{
+          color:#fff;
+        }
+      }
+      .btn-right{
+        color:#fff;
+        background:$default-color;
+      }
+    }
+  }
+  .step3-form{
+    float:left;
+    margin-top:12px;
+    .form-cell{
+      margin-top:30px;
+      .form-cell-left{
+        float:left;
+        margin-left:100px;
+        font-size:14px;
+        &.required{
+          position:relative;
+          &:after{
+            content:'*';
+            position:absolute;
+            top:0;
+            left:-12px;
+            color:red;
+          }
+        }
+      }
+      .form-cell-right{
+        padding-left:186px;
+        font-size:12px;
+        position:relative;
+        .my-select{
+          @extend %normal-input;
+          font-size:12px;
+        }
+        .my-input{
+          width:237px;
+          padding:5px 10px;
+        }
+        .tip{
+          margin-top:10px;
+          color:#777;
+          font-size:12px;
+        }
+        .my-upload{
+          position:relative;
+          overflow: hidden;
+          input[type='file']{
+            position:absolute;
+            top:-25px;
+            left:0;
+            width:150px;
+            height:150px;
+            opacity:0;
+            font-size:200px;
+            filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+            &:hover{
+              cursor: pointer;
+            }
+          }
+          width:100px;
+          height:100px;
+          border:1px dashed #aaa;
+          color:#e5e5e5;
+          text-align:center;
+          .plus{
+            font-size:50px;
+            line-height:50px;
+          }
+        }
+        .submit-btn{
+          width:161px;
+          height:27px;
+          line-height:27px;
+          background:$default-color;
+          text-align:center;
+          border-radius:10px;
+          color:#fff;
+          cursor: pointer;
+          &:hover{
+            background:$hover-color;
+          }
+        }
+        .upload-img-container{
+          float:left;
+          .upload-img{
+            position:relative;
+            display:inline-block;
+            width:100px;
+            height:100px;
+            margin-right:10px;
+            background:#ddd;
+            .del-upload-img{
+              position:absolute;
+              top:0;
+              right:0;
+              width:20px;
+              height:20px;
+              border-radius: 50%;
+              background:#fff;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.hot-product-container{
+  margin-top:20px;
+  width:960px;
+}

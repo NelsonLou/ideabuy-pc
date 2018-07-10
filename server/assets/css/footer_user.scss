@@ -1,0 +1,128 @@
+.common-w {
+	margin: 0 auto;
+}
+
+.footerU {
+	width: 100%;
+	min-width: 1400px;
+	background-color: #333333;
+	color: #B3B5BA;
+
+	.footerU-box {
+		div,
+		ul {
+			padding: 0;
+			margin: 0;
+		}
+
+		.footerU-left {
+			.footerU-left-nav {
+				margin-top: 40px;
+				list-style: none;
+				height: 20px;
+				font-size: 13px;
+
+				li {
+					float: left;
+					margin-left: 13px;
+
+					a {
+						color: #B3B5BA;
+					}
+				}
+
+				li:first-child {
+					margin-left: 0;
+				}
+			}
+
+			.footerU-left-contact {
+				height: 28px;
+				list-style: none;
+				margin-top: 15px;
+				font-size: 14px;
+
+				li {
+					float: left;
+					margin-left: 20px;
+					line-height: 28px;
+
+					a {
+						color: #B3B5BA;
+					}
+
+					span:first-child {
+						float: left;
+						width: 25px;
+						height: 25px;
+						color: #B3B5BA;
+						margin-right: 10px;
+					}
+
+					.footerU-phoneIMG {
+						background: url("../images/icon/bottom-phone.png");
+					}
+
+					.footerU-smileIMG {
+						background: url("../images/icon/bottom-server.png");
+					}
+				}
+
+				li:first-child {
+					margin-left: 0;
+				}
+			}
+
+			.footerU-left-txt {
+				margin-top: 15px;
+			}
+
+			.footerU-left-faith {
+				margin-top: 15px;
+				margin-bottom: 28px;
+
+				.footerU-faithAIMG {
+					width: 33px;
+					height: 40px;
+					background: url('../images/icon/footer-one.png') no-repeat;
+				}
+
+				.footerU-faithBIMG {
+					width: 84px;
+					height: 40px;
+					margin-left: 18px;
+					background: url('../images/icon/footer-two.png') no-repeat;
+				}
+
+				.footerU-faithCIMG {
+					width: 87px;
+					height: 40px;
+					margin-left: 18px;
+					background: url('../images/icon/footer-three.png') no-repeat;
+				}
+			}
+		}
+
+		.footerU-right {
+			height: 100%;
+			text-align: center;
+
+			.footerU-qrcode {
+				height: 100%;
+				width: 90px;
+				float: right;
+
+				.footerU-qr {
+					width: 100%;
+					height: 92px;
+					margin-top: 63px;
+					background: url('../images/icon/qr_1.png');
+				}
+			}
+
+			.footerU-qrcode:last-child {
+				margin-right: 32px;
+			}
+		}
+	}
+}

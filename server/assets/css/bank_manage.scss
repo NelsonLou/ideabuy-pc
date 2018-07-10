@@ -1,0 +1,175 @@
+.bankcard-box{
+  width: 960px;
+  height: 662px;
+  border: 1px solid #EEE;
+  background: #FFF;
+  position: relative;
+    .modal {
+      display: none;
+      position: absolute;
+      top: 0;
+      z-index: 1000;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      .delete {
+        width: 400px;
+        height: 150px;
+        background: #FFF;
+        border-radius: 5px;
+        text-align: center;
+        position: absolute;
+        padding-top: 65px;
+        font-size: 18px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        .confirm {
+          position: absolute;
+          bottom: 0;
+          width: 50%;
+          height: 55px;
+          text-align: center;
+          line-height: 55px;
+          font-size: 16px;
+          background: #FD7E24;
+          color: #FFF;
+          left: 0;
+          cursor: pointer;
+          border-radius: 0 0 0 5px;
+        }
+        .confirm:hover {
+          background: #FE944A;
+        }
+        .cancel {
+          position: absolute;
+          bottom: 0;
+          width: 50%;
+          height: 55px;
+          text-align: center;
+          line-height: 55px;
+          font-size: 16px;
+          background: #B8BFD2;
+          color: #FFF;
+          right: 0;
+          cursor: pointer;
+          border-radius: 0 0 5px 0;
+        }
+        .cancel:hover {
+          background: #CCC;
+        }
+    }
+  }
+  .bankcard-header {
+    padding-left: 30px;
+    padding-top: 19px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #F7F7F8;
+    span {
+      color: #777;
+      font-size: 12px;
+    }
+    .title {
+      font-size: 17px;
+      color: #333;
+      margin-right: 18px;
+    }
+    :nth-child(1) {
+      font-size: 17px;
+      color: #333;
+      margin-right: 18px;
+    }
+    :nth-child(3) {
+      color: #FF0000;
+      margin-left: -4px;
+      margin-right: -4px;
+    }
+    .num {
+      color: #FF0000;
+      margin-left: -4px;
+      margin-right: -4px;
+    }
+  }
+  .bankcard {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      padding-bottom: 25px;
+      padding-left: 36px;
+      .close {
+        width: 21px;
+        height: 21px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        display: none;
+      }
+      li {
+        position: relative;
+        float: left;
+        width: 260px;
+        height: 140px;
+        margin-right: 32px;
+        margin-top: 21px;
+        box-shadow: -1px 4px 6px #666;
+      }
+      .bankcard {
+        position: relative;
+        .bankcard-img {
+          width: 49px;
+          height: 49px;
+          background: #FFF;
+          border-radius: 50%;
+          margin-top: 19px;
+          margin-left: 21px;
+        }
+        .bankcard-type {
+          color: #FFF;
+          font-size: 14px;
+          margin-top: -10px;
+          position: absolute;
+          left: 90px;
+          top: 45px;
+        }
+        .bankcard-num {
+          color: #FFF;
+          font-size: 25px;
+          text-align: right;
+          margin-right: 25px;
+          margin-top: 26px;
+          font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+        }
+      }
+      .add-bankcard {
+        cursor: pointer;
+        width: 258px;
+        height: 138px;
+        border: 1px solid #EEE;
+        a {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+        }
+        .add {
+          display: block;
+          width: 28px;
+          height: 28px;
+          margin: 0 auto;
+          margin-top: 50px;
+        }
+        .title {
+          font-size: 12px;
+          color: #4076F0;
+          text-align: center;
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+}

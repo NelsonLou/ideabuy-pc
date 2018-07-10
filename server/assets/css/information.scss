@@ -1,0 +1,152 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 0 !important;
+}
+.content {
+     background: #F7F7F8;
+     .minBox {
+        .valiform-error {border:1px solid #EC7272!important;}
+		    .text-error {color:#EC7272; font-size: 12px;}
+		    .text-suc {color:#22A71B;}
+		    .passwordStrength span {display: inline-block; width: 40px; height: 20px; margin:0 20px; background-color: #d0d0d0; font-size: 12px; line-height: 20px; text-align: center;} 
+        #passwordStrength .bgStrength {color: #fff; background-color: #71b83d;}
+      /*下拉菜单*/
+      .select {
+          position: relative;
+          left: 94px;
+          top: -28px;
+          margin: 10px;
+          border: solid 1px #AAAAAA;
+          height: 31px;
+          width: 292px;
+          line-height: 29px;
+      }
+      .select .select-view {
+          position: relative;
+          font-size: 15px;
+      }
+      .select .select-view .select-text {
+          padding-left: 10px;
+          padding-right: 30px;
+          height: 24px;
+          line-height: 24px;
+          color: gray;
+      }
+      .select .select-view .select-icon {
+          display: block;
+          position: absolute;
+          right: 5px;
+          top: 10px;
+          border: solid 5px #fff;
+          border-top-color: #ccc ;
+          cursor: pointer;
+      }
+      .select .options {
+          display: none;
+          position: absolute;
+          left: -1px;
+          top: 100%;
+          padding: 5px 0;
+          background: #fff;
+          width: 100%;
+          border: solid 1px #cccccc;
+          z-index: 10;
+          font-size: 15px;
+      }
+      .select .options > li {
+          margin: 10px;
+          cursor: pointer;
+      }
+       .right {
+         width: 961px;
+         height: 701px;
+         background: #ffffff;
+           .right-hear {
+             width: 100%;
+             height: 50px;
+             border-bottom: 2px solid #F7F7F8;
+             line-height: 50px;
+                  .infor-title {
+                        color: #333333;
+                        font-size: 17px;
+                        margin-left: 31px;
+                        font-family: MicrosoftYaHei;
+                    }
+                  .infor-suc {
+                        margin-left: 500px;
+                        font-size: 13px;
+                        font-family: MicrosoftYaHei;
+                        color: #FD7E24;
+                    }      
+                }
+             .right-content {
+              border-bottom: 2px solid #F7F7F8;
+              padding-bottom: 14px;
+                 .minBoxOneBo {
+                   margin-top: 25px;
+                 }
+                 .minBoxTwoBo {
+                   margin-top: 10px;
+                 }
+                 .minBoxThreeBo {
+                   margin-top: 10px;
+                 }
+                 .minBoxfourBo {
+                   margin-top: 7px;
+                 }
+                 .minBoxFiveBo {
+                   margin-top: 7px;
+                  }
+                 .minBoxSexBo {
+                    margin-top: 0px;
+                 }
+                 .minBoxAllBo {
+                   margin-top: 10px;
+                 } 
+                .rightCon-minBox {
+                  height: 31px;
+                  margin-left: 75px;
+                    .rightCon-minBox-title {
+                      font-size: 14px;
+                      display: inline-block;
+                      text-align: left;
+                      width: 100px;
+                    }
+                    .rightCon-minBox-content {
+                      vertical-align:middle;
+                      font-size: 15px;
+                      padding-left: 10px;
+                      width: 282px;
+                      height: 31px;
+                      border: 1px solid #AAAAAA;
+                        ::-webkit-input-placeholder {
+                          color: #AAAAAA;
+                      
+                    }
+                    }
+                    .rightCon-minBox-contentS {
+                      font-size: 15px;
+                    }
+                }
+                  .rightCon_bottom {
+                      padding-bottom: 14px;
+                    }  
+             }
+              .information-btn {
+                width: 161px;
+                height: 31px;
+                background-color: #FD7E24;
+                color: white;
+                border: none;
+                border-radius: 10px;
+                margin-left: 224px;
+                margin-top: 25px;
+                outline: none;
+              }         
+       }
+     }
+  }

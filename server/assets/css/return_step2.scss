@@ -1,0 +1,68 @@
+$default-color:#FD7E24;
+$hover-color:#FD944A;
+.return-step2-container{
+  margin-top:10px;
+  &:after{
+    content:'';
+    display: block;
+    clear:both;
+  }
+  .return-detail-container{
+    float:right;
+    width:270px;
+  }
+  .return-consult-container{
+    width:640px;
+    float:left;
+    margin-top:10px;
+  }
+  .step2-main{
+    width:580px;
+    background:#f3f3f3;
+    padding:30px;
+    color:#777;
+    font-size:12px;
+    float:left;
+    .line-container{
+      position:relative;
+      padding-left:15px;
+      .line-point{
+        font-size:20px;
+        position:absolute;
+        top:-5px;
+        left:0;
+      }
+    }
+    .btn-group{
+      margin-top:38px;
+      >div{
+        display: inline-block;
+        border:1px solid $default-color;
+        width:100px;
+        height:27px;
+        line-height:27px;
+        text-align: center;
+        cursor: pointer;
+        &:hover{
+          background:$hover-color;
+        }
+      }
+      .btn-left{
+        margin-right:20px;
+        color:$default-color;
+        &:hover{
+          color:#fff;
+        }
+      }
+      .btn-right{
+        color:#fff;
+        background:$default-color;
+      }
+    }
+  }
+}
+
+.hot-product-container{
+  margin-top:20px;
+  width:960px;
+}

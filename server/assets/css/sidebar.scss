@@ -1,0 +1,463 @@
+.sidebar {
+  position: relative;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  bottom: 0;
+  // right: 300px;
+  right: 0;
+  width: 37px;
+  background-color: #0a0a0a;
+  color: #FFF;
+
+  div {
+    margin: 0;
+    padding: 0;
+  }
+
+  .sidebar-person {
+    position: relative;
+    width: 100%;
+    height: 37px;
+    margin-top: 200px;
+    background: url('../images/icon/sidebar-person.png') 10px no-repeat;
+
+    a {
+      position: absolute;
+      top: 0;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .sidebar-shopcar-box {
+    position: relative;
+    width: 100%;
+  }
+
+  .sidebar-shopcar {
+    position: relative;
+    width: 70%;
+    height: 118px;
+    margin: 0 auto;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+
+    .sidebar-shopcar-icon {
+      background: url('../images/icon/sidebar-shopcar.png') 3px no-repeat;
+      height: 26px;
+    }
+
+    span {
+      display: block;
+      font-size: 13px;
+      margin-top: 10px;
+    }
+
+    .sidebar-shopcar-txt {
+      display: inline-block;
+      height: 40px;
+      margin-left: 4px;
+      writing-mode: tb-lr;
+      /*IE浏览器的从左向右 从右向左是 writing-mode: tb-rl；*/
+      writing-mode: vertical-lr;
+      /*从左向右 从右向左是 writing-mode: vertical-rl;*/
+    }
+
+    .sidebar-shopcar-num {
+      width: 20px;
+      height: 20px;
+      margin: 0 auto;
+      border-radius: 10px;
+      text-align: center;
+      line-height: 20px;
+      background-color: rgb(244,36,36);
+      margin-top: 5px;
+      margin-left: 3px;
+    }
+  }
+
+  .sidebar-coupons {
+    position: relative;
+    width: 100%;
+    height: 37px;
+    background: url('../images/icon/sidebar-coupons.png') 12px no-repeat;
+  }
+
+  .sidebar-qr {
+    position: relative;
+    width: 100%;
+    height: 37px;
+    background: url('../images/icon/sidebar-qr.png') 12px no-repeat;
+  }
+
+  .sidebar-share {
+    position: relative;
+    width: 100%;
+    height: 37px;
+    background: url('../images/icon/sidebar-share.png') 12px no-repeat;
+  }
+
+  .sidebar-service {
+    position: relative;
+    width: 100%;
+    height: 37px;
+    background: url('../images/icon/sidebar-service.png') 10px no-repeat;
+  }
+
+  .sidebar-write {
+    position: relative;
+    width: 100%;
+    height: 37px;
+    margin-top: 220px;
+    background: url('../images/icon/sidebar-write.png') 12px no-repeat;
+  }
+
+  .sidebar-gotop {
+    position: relative;
+    width: 100%;
+    height: 37px;
+    background: url('../images/icon/sidebar-top.png') 12px no-repeat;
+
+    a {
+      position: absolute;
+      top: 0;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  // hover
+  .sidebar-gotop:hover,
+  .sidebar-person:hover,
+  .sidebar-qr:hover,
+  .sidebar-service:hover,
+  .sidebar-share:hover,
+  .sidebar-write:hover {
+    background-color: #FF0036;
+  }
+
+  .sidebar-coupons:hover .sidebar-coupons-hidden,
+  .sidebar-gotop:hover .sidebar-gotop-hidden,
+  .sidebar-person:hover .sidebar-person-hidden,
+  .sidebar-qr:hover .sidebar-qr-hidden,
+  .sidebar-service:hover .sidebar-service-hidden,
+  .sidebar-share:hover .sidebar-share-hidden,
+  .sidebar-write:hover .sidebar-write-hidden {
+    visibility: visible;
+  }
+}
+//侧边展开栏
+
+.sidebar-side-hidden {
+  z-index: 200;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #ECECEA;
+
+  div,
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .sidebar-side-hTitle {
+    width: 100%;
+    height: 43px;
+    font-size: 14px;
+    text-indent: 20px;
+    line-height: 43px;
+    color: #424242;
+  }
+  .icon-close-circle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    background: url('../images/cart/icon-close-circle.png') no-repeat;
+    cursor: pointer;
+  }
+
+  .sidebar-shopcar-hList {
+    width: 100%;
+    height: 80%;
+
+    ul {
+      width: 100%;
+      background-color: white;
+
+      li {
+        height: 130px;
+        width: 100%;
+        border-bottom: 1px dashed #666;
+
+        .common-left:first-child {
+          margin-top: 19px;
+          margin-left: 19px;
+          width: 90px;
+          height: 90px;
+          border: 1px solid #EEEEEE;
+        }
+
+        .common-left:last-child {
+          margin-left: 8px;
+          margin-top: 25px;
+          width: 175px;
+          color: #6E6E6E;
+          font-size: 12px;
+
+          .sidebar-shopcar-hListPri {
+            margin-top: 10px;
+            display: block;
+          }
+
+          i:first-child {
+            color: #F42424;
+          }
+
+          i {
+            font-style: normal;
+            margin-left: 5px;
+            margin-right: 5px;
+            color: #999999;
+          }
+        }
+      }
+    }
+  }
+
+  .sidebar-shopcar-hBtn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 109px;
+    background-color: #fff;
+
+    span {
+      display: block;
+      margin-left: 20px;
+      margin-top: 20px;
+      font-size: 12px;
+      color: #6e6e6e;
+
+      i {
+        font-style: normal;
+        color: #F42424;
+      }
+    }
+
+    .sidebar-shopcar-hGo {
+      display: inline-block;
+      width: 272px;
+      height: 38px;
+      line-height: 38px;
+      font-size: 16px;
+      background-color: #FF0036;
+      margin-top: 20px;
+      text-align: center;
+      border: none;
+      margin-left: 14px;
+      color: #fff;
+    }
+  }
+
+  .sidebar-side-coupons {
+    width: 100%;
+    height: 80%;
+    // background-color: black;
+    .sidebar-coupons-hList {
+      width: 100%;
+      height: 80%;
+
+      ul {
+        width: 100%;
+        background-color: white;
+
+        li {
+          height: 130px;
+          width: 100%;
+          border-bottom: 1px dashed #666;
+
+          .common-left:first-child {
+            margin-top: 19px;
+            margin-left: 19px;
+            width: 90px;
+            height: 90px;
+            border: 1px solid #EEEEEE;
+            background: url("../images/image/phoneC.jpg") no-repeat;
+          }
+
+          .common-left:last-child {
+            margin-left: 8px;
+            margin-top: 25px;
+            width: 175px;
+            color: #6E6E6E;
+            font-size: 12px;
+
+            .sidebar-coupons-hListPri {
+              margin-top: 10px;
+              display: block;
+            }
+
+            i:first-child {
+              color: #F42424;
+            }
+
+            i {
+              font-style: normal;
+              margin-left: 5px;
+              margin-right: 5px;
+              color: #999999;
+            }
+          }
+        }
+      }
+    }
+
+    .sidebar-coupons-hBtn {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+
+      .sidebar-coupons-hGo {
+        width: 272px;
+        height: 38px;
+        font-size: 16px;
+        background-color: #FF0036;
+        margin-top: 20px;
+        text-align: center;
+        border: none;
+        margin-left: 14px;
+        margin-bottom: 10px;
+
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+// hover 提示
+
+.sidebar-hidden {
+  visibility: hidden;
+  position: relative;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  width: 87px;
+  height: 36px;
+  line-height: 36px;
+  left: -87px;
+
+  span {
+    display: inline-block;
+    position: absolute;
+    background-color: #000;
+    width: 10px;
+    height: 10px;
+    right: -5px;
+    top: 13px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+  }
+}
+// 加入购物车成功
+
+.sidebar-shopcar-addBox {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  color: #333;
+
+  .sidebar-shopcar-add {
+    width: 555px;
+    height: 76px;
+    // height: 276px;
+    position: absolute;
+    background-color: #fff;
+    top: -270px;
+    right: 37px;
+    border: 1px solid #eee;
+
+    .sidebar-right-title {
+      width: 525px;
+      height: 56px;
+      margin-top: 20px;
+      margin-left: 15px;
+      // border-bottom: dashed 1px #666;
+
+      span {
+        display: block;
+      }
+
+      .sidebar-right-logo {
+        width: 35px;
+        height: 35px;
+        margin-right: 20px;
+        background: url('../images/goodsDetail/icon-success.png') no-repeat;
+      }
+
+      .sidebar-right-goodsName {
+        color: #666;
+        width: 200px;
+      }
+
+      .sidebar-right-txt {
+        width: 200px;
+      }
+
+      .sidebar-right-button {
+        width: 103px;
+        height: 27px;
+        border-radius: 15px;
+        background-color: #FD7E24;
+        text-align: center;
+        line-height: 27px;
+        color: #fff;
+      }
+    }
+
+    .sidebar-right-bottom {
+      width: 100%;
+      margin-top: 20px;
+      color: #666;
+
+      .sidebar-right-bottomTxt {
+        margin-left: 15px;
+      }
+
+      .sidebar-right-bottomImg {
+        width: 100%;
+        height: 115px;
+        margin-top: 20px;
+        margin-left: 17px;
+
+        span {
+          height: 115px;
+          display: inline-block;
+          border: 1px solid #e3e3e3;
+          width: 115px;
+        }
+
+        .sidebar-bottom-btn {
+          width: 20px;
+          border: none;
+        }
+      }
+    }
+  }
+}

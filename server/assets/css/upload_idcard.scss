@@ -1,0 +1,312 @@
+.act-body{
+  width: 100%;
+  padding: 35px 0;
+  background: #f7f7f7;
+  p{
+    margin: 0;
+  }
+  div, p, span, input{
+    color: #333;
+    font-size: 12px;
+    box-sizing: border-box;
+  }
+  .act-content{
+    width: 1190px;
+    margin: 0 auto;
+    background: #fff;
+    overflow: hidden;
+    .act-form{
+      .act-form-row{
+        width: 840px;
+        height: 150px;
+        font-size: 0;
+        margin: 60px auto 45px auto;
+        .act-form-item{
+          width: 260px;
+          height: 150px;
+          display: inline-block;
+          margin-left: 30px;
+          position: relative;
+          background: #fafafa;
+          overflow: hidden;
+          .my-upload{
+            float:left;
+            position:relative;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            color:#e5e5e5;
+            text-align:center;
+            input[type='file']{
+              position:absolute;
+              left: 0;
+              top: 0;
+              width: 260px;
+              height: 150px;
+              opacity:0;
+              font-size:200px;
+              filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+              &:hover{
+                cursor: pointer;
+              }
+            }
+            .act-form-info{
+              font-size: 12px;
+              line-height: 12px;
+              text-align: center;
+              margin: 37px 0 16px 0;
+            }
+            .act-form-icon{
+              width: 48px;
+              height: 48px;
+              margin: 0 auto 37px auto;
+              display: block;
+              background: url('../images/ious/act-camera.png') no-repeat;
+            }
+          }
+          .upload-img-container{
+            float:left;
+            .upload-img{
+              position:relative;
+              display:inline-block;
+              width: 260px;
+              height: 150px;
+              margin-right:10px;
+              background:#ddd;
+              .del-upload-img{
+                position:absolute;
+                top:0;
+                right:0;
+                width:20px;
+                height:20px;
+                border-radius: 50%;
+                background:#fff;
+                cursor: pointer;
+              }
+            }
+          }
+          .act-form-file-upload {
+            position: absolute;
+            font-size: 125px;
+            right: 0;
+            top: 0;
+            opacity: 0;
+            -webkit-opacity: 0;
+            -moz-opacity: 0;
+            -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+          }
+        }
+        .act-item-fir {
+          margin-left: 0;
+        }
+      }
+      .act-tips{
+        font-size: 12px;
+        margin: 8px 0 23px 0;
+        text-align: center;
+      }
+      .act-btn-submit{
+        width: 212px;
+        height: 36px;
+        margin: 0 auto 40px auto;
+        color: #fff;
+        line-height: 36px;
+        text-align: center;
+        background: #fa9738;
+        cursor: pointer;
+      }
+    }
+  }
+  .act-disc{
+    width: 1190px;
+    margin: 20px auto 0 auto;
+    padding: 20px 0 20px 180px;
+    background: #fff;
+    overflow: hidden;
+    .act-disc-title{
+      margin-bottom: 14px;
+      line-height: 20px;
+      .act-disc-help{
+        color: #0069EA;
+        cursor: pointer;
+      }
+    }
+    .act-disc-detail{
+      .act-disc-detail-item{
+        color: #777;
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+  }
+  .act-layer{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #666;
+    opacity: .6;
+    -webkit-opacity: 0.6;
+    -khtml-opacity: 0.6;
+    -moz-opacity: 0.6;
+    filter:alpha(opacity=60);
+    filter:"alpha(opacity=60)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+    z-index: 90;
+  }
+  .act-overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    .act-overlay-window{
+      width: 680px;
+      height: 444px;
+      margin: 15% auto 0;
+      background: #fff;
+      overflow: hidden;
+      border-radius: 6px;
+      .act-overlay-title{
+        width: 100%;
+        height: 46px;
+        line-height: 46px;
+        font-size: 16px;
+        text-align: center;
+        position: relative;
+        margin-bottom: 20px;
+        background: #fafafa;
+        border-bottom: 1px solid #dbdbdb;
+        .act-overlay-close{
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          width: 25px;
+          height: 25px;
+          cursor: pointer;
+          background: url('../images/ious/act-close-circle.png') no-repeat;
+        }
+      }
+      .act-overlay-row{
+        width: 580px;
+        height: 190px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        .act-overlay-item{
+          width: 261px;
+          height: 190px;
+          display: inline-block;
+          .act-overlay-item-span{
+            display: block;
+            height: 150px;
+            width: 100%;
+            background: #fafafa;
+            overflow: hidden;
+            .act-overlay-item-img{
+              display: block;
+              width: 200px;
+              height: 126px;
+              margin: 12px auto;
+            }
+            .idcard-front{
+              background: url('../images/ious/act-idcard-front.jpg') no-repeat;
+            }
+            .idcard-reverse{
+              background: url('../images/ious/act-idcard-reverse.jpg') no-repeat;
+            }
+            .idcard-inhand{
+              background: url('../images/ious/act-idcard-inhand.jpg') no-repeat;
+            }
+          }
+          .act-overlay-item-text{
+            display: block;
+            height: 40px;
+            width: 100%;
+            color: #adadad;
+            font-size: 12px;
+            line-height: 40px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .act-res-layer{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #666;
+    opacity: .6;
+    -webkit-opacity: 0.6;
+    -khtml-opacity: 0.6;
+    -moz-opacity: 0.6;
+    filter:alpha(opacity=60);
+    filter:"alpha(opacity=60)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+    z-index: 90;
+  }
+  .act-res-overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    .act-overlay-window-fail{
+      width: 438px;
+      height: 300px;
+      margin: 260px auto 0;
+      background: #fff;
+      overflow: hidden;
+      border-radius: 6px;
+      .act-overlay-window-top{
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        position: relative;
+        .act-overlay-close{
+          position: absolute;
+          right: 15px;
+          top: 15px;
+          width: 12px;
+          height: 12px;
+          background: url('../images/ious/act-false.png') no-repeat;
+          cursor: pointer;
+        }
+      }
+      .act-overlay-window-icon{
+        width: 48px;
+        height: 48px;
+        margin: 18px auto 32px auto;
+        background: url('../images/ious/act-warn.png') no-repeat;
+      }
+      .act-overlay-window-msg{
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .act-overlay-window-btn{
+        width: 155px;
+        height: 42px;
+        text-align: center;
+        line-height: 42px;
+        font-size: 12px;
+        border: 1px solid #eee;
+        display: inline-block;
+        border-radius: 6px;
+        cursor: pointer;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,239 @@
+// 右边内容部分
+.right-content{
+  box-sizing: border-box;
+  ul,p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+  }
+  width: 960px;
+  float: right;
+  background: #fff;
+  padding: 20px;
+  // 右边交易操作
+  .payment-info{
+    width: 920px;
+    margin: 0 auto;
+    font-size: 14px;
+    background: #F9F9F9;
+    padding: 35px;
+    border: 1px solid #D2D2D2;
+    box-sizing: border-box;
+    p{
+      padding: 10px 0;
+    }
+    .goods-payment{
+      color: #b3b3b3;
+      position: relative;
+      .payment{
+        color: #FF4040;
+        font-size: 18px;
+        margin-right: 39px;
+      }
+      .payment-time{
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background: url('../images/order/UC_time.png');
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 17px;
+        left: 127px;
+      }
+    }
+    .pay-prompt{
+      color: #303030;
+      .payment-btn{
+        padding: 5px 19px;
+        background: #FD7E24;
+        color: #fff;
+        border-radius: 3px;
+        margin: 0 10px;
+        cursor: pointer;
+      }
+    }
+    .order-operat{
+      color: #303030;
+      .operat{
+        color: #396EF4;
+        margin-left: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+  .order-info{
+    .info-title{
+      color: #272727;
+      padding: 25px 0 25px 25px;
+      p{
+        float: right;
+        a{
+          font-size: 14px;
+          color: #272727;
+          text-decoration: none;
+          position: relative;
+          padding: 0 25px;
+          .order-info-sever{
+            display: block;
+            width: 16px;
+            height: 16px;
+            background: url('../images/order/WP_sever.png');
+            position: absolute;
+            top: 2px;
+            left: 0;
+          }
+          .order-info-phone{
+            display: inline-block;
+            width: 13px;
+            height: 13px;
+            background: url('../images/order/WP_phone.png');
+            position: absolute;
+            top: 3px;
+            left: 30px;
+          }
+        }
+        .IT-serve{
+          border-right: 1px solid #E5E5E5;
+        }
+        .IT-phone{
+          padding-left: 50px;
+          padding-right: 0;
+        }
+      }
+    }
+    .info-detail{
+      width: 100%;
+      color: #272727;
+      .ID-table{
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+        border: 1px solid #d2d2d2;
+        margin-bottom: 15px;
+        tr{
+          th{
+            background: #F9F9F9;
+            border-bottom: 1px solid #d2d2d2;
+            padding: 10px 0;
+            font-weight: normal;
+          }
+          td{
+            padding: 15px 0;
+          }
+        }
+      }
+    }
+    .info-goods{
+      width: 100%;
+      color: #272727;
+      .IG-table{
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+        border: 1px solid #d2d2d2;
+        tr{
+          th{
+            background: #F9F9F9;
+            border-bottom: 1px solid #d2d2d2;
+            padding: 10px 0;
+            font-weight: normal;
+          }
+          td{
+            img{
+              width: 64px;
+              height: 64px;
+              float: left;
+              border: 1px solid #DCDCDC;
+              margin-right: 10px;
+            }
+            padding: 10px;
+            border-bottom: 1px solid #E5E5E5;
+          }
+          .IG-td{
+            width: 260px;
+            span{
+              display: block;
+              text-align: left;
+            }
+          }
+          .td-color{
+            color: #FF3939;
+          }
+        }
+        .IG-tr{
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .invoice-info{
+    .title-info{
+      padding: 25px;
+      color: #272727;
+    }
+    .II-table{
+      width: 100%;
+      text-align: center;
+      border: 1px solid #d2d2d2;
+      font-size: 14px;
+      color: #272727;
+      tr{
+        th{
+          background: #F9F9F9;
+          border-bottom: 1px solid #d2d2d2;
+          padding: 10px 0;
+          font-weight: normal;
+        }
+        td{
+          padding: 15px 0;
+          a{
+            text-decoration: none;
+            color: #3B71E9;
+          }
+        }
+      }
+    }
+  }
+  .logistics-info{
+    .logistics-title{
+      padding: 25px;
+      color: #272727;
+    }
+    .logistics-detail{
+      font-size: 14px;
+      color: #272727;
+      padding: 15px;
+      background: #F9F9F9;
+      border: 1px solid #D2D2D2;
+      div{
+        padding: 5px 0;
+        overflow: hidden;
+        span{
+          float: left;
+          display: inline-block;
+          width: 120px;
+          text-align: right;
+        }
+        a{
+          padding-left: 5px;
+        }
+        ul{
+          width: 762px;
+          list-style: none;
+          float: right;
+          li{
+            padding-bottom: 5px;
+            .logistics-web{
+              color: #3281D2;
+              font-weight: normal;
+              cursor: pointer;
+            }
+          }
+          b{
+            font-weight: normal;
+            color: #376BF0;
+          }
+        }
+      }
+    }
+  }
+}

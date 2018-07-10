@@ -1,0 +1,78 @@
+.address-box{
+  width: 960px;
+  height: 662px;
+  border: 1px solid #EEE;
+  background: #FFF;
+  .address-header {
+    overflow: hidden;
+    padding-left: 30px;
+    padding-top: 19px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #F7F7F8;
+    overflow: hidden;
+    font-size: 17px;
+    color: #333;
+    .add-address {
+      text-decoration: none;
+      color: #FFF;
+      font-size: 12px;
+      width: 130px;
+      height: 30px;
+      display: inline-block;
+      background: #FD7E24;
+      border-radius: 3px;
+      line-height: 30px;
+      text-align: center;
+      float: right;
+      margin-right: 30px;
+    }
+    .add-address:hover {
+      background: #E67C0A;
+    }
+  }
+  table {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: 1px solid #EEE;
+    th {
+      background: #EEE;
+      width: 210px;
+      height: 32px;
+      text-align: center;
+      font-size: 12px;
+      color: #333;
+      border-bottom: 1px solid #EEE;
+    }
+    td {
+      width: 210px;
+      height: 60px;
+      text-align: center;
+      font-size: 12px;
+      color: #333;
+      border-bottom: 1px solid #EEE;
+      .edit {
+        cursor: pointer;
+      }
+      .delete {
+        color: #FF0000;
+        cursor: pointer;
+      }
+      .default {
+        display: inline-block;
+        background: #FD7E24;
+        border-radius: 6px;
+        text-align: center;
+        line-height: 30px;
+        color: #FFF;
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+        cursor: pointer;
+      }
+      .set-default {
+        cursor: pointer;
+      }
+    }
+  }
+}
